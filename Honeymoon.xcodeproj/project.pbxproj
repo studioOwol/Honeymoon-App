@@ -13,6 +13,9 @@
 		7150A8C92A10F87A0075718E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7150A8C82A10F87A0075718E /* Preview Assets.xcassets */; };
 		7150A8D02A10F9600075718E /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 7150A8CF2A10F9600075718E /* Sounds */; };
 		7150A8D22A10F9810075718E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7150A8D12A10F9810075718E /* Launch Screen.storyboard */; };
+		7150A8D42A10FA570075718E /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150A8D32A10FA570075718E /* HoneymoonModel.swift */; };
+		7150A8D72A10FA9A0075718E /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150A8D62A10FA9A0075718E /* HoneymoonData.swift */; };
+		7150A8DB2A10FB020075718E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150A8DA2A10FB010075718E /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		7150A8C82A10F87A0075718E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7150A8CF2A10F9600075718E /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		7150A8D12A10F9810075718E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		7150A8D32A10FA570075718E /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
+		7150A8D62A10FA9A0075718E /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
+		7150A8DA2A10FB010075718E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +61,11 @@
 		7150A8C02A10F8790075718E /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				7150A8D92A10FAD30075718E /* View */,
+				7150A8D82A10FAA10075718E /* Data */,
+				7150A8D52A10FA5B0075718E /* Model */,
 				7150A8CF2A10F9600075718E /* Sounds */,
 				7150A8C12A10F8790075718E /* HoneymoonApp.swift */,
-				7150A8C32A10F8790075718E /* ContentView.swift */,
 				7150A8C52A10F87A0075718E /* Assets.xcassets */,
 				7150A8C72A10F87A0075718E /* Preview Content */,
 				7150A8D12A10F9810075718E /* Launch Screen.storyboard */,
@@ -71,6 +79,31 @@
 				7150A8C82A10F87A0075718E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7150A8D52A10FA5B0075718E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7150A8D32A10FA570075718E /* HoneymoonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7150A8D82A10FAA10075718E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7150A8D62A10FA9A0075718E /* HoneymoonData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7150A8D92A10FAD30075718E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7150A8C32A10F8790075718E /* ContentView.swift */,
+				7150A8DA2A10FB010075718E /* CardView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7150A8D72A10FA9A0075718E /* HoneymoonData.swift in Sources */,
+				7150A8D42A10FA570075718E /* HoneymoonModel.swift in Sources */,
 				7150A8C42A10F8790075718E /* ContentView.swift in Sources */,
 				7150A8C22A10F8790075718E /* HoneymoonApp.swift in Sources */,
+				7150A8DB2A10FB020075718E /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
