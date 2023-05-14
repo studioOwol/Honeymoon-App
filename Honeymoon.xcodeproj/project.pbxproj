@@ -12,6 +12,7 @@
 		7150A8C62A10F87A0075718E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7150A8C52A10F87A0075718E /* Assets.xcassets */; };
 		7150A8C92A10F87A0075718E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7150A8C82A10F87A0075718E /* Preview Assets.xcassets */; };
 		7150A8D02A10F9600075718E /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 7150A8CF2A10F9600075718E /* Sounds */; };
+		7150A8D22A10F9810075718E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7150A8D12A10F9810075718E /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		7150A8C52A10F87A0075718E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7150A8C82A10F87A0075718E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7150A8CF2A10F9600075718E /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		7150A8D12A10F9810075718E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				7150A8C32A10F8790075718E /* ContentView.swift */,
 				7150A8C52A10F87A0075718E /* Assets.xcassets */,
 				7150A8C72A10F87A0075718E /* Preview Content */,
+				7150A8D12A10F9810075718E /* Launch Screen.storyboard */,
 			);
 			path = Honeymoon;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			files = (
 				7150A8D02A10F9600075718E /* Sounds in Resources */,
 				7150A8C92A10F87A0075718E /* Preview Assets.xcassets in Resources */,
+				7150A8D22A10F9810075718E /* Launch Screen.storyboard in Resources */,
 				7150A8C62A10F87A0075718E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +272,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Honeymoon/Preview Content\"";
@@ -277,6 +282,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -297,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Honeymoon/Preview Content\"";
@@ -306,6 +313,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
