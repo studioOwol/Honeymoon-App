@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct GuideView: View {
+    //MARK: - Properties
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         
         ScrollView(.vertical, showsIndicators: false) {
@@ -43,7 +46,8 @@ struct GuideView: View {
                 
                 Button(action: {
                     // Action
-                    print("A butto nwas tapped.")
+                    // print("A butto nwas tapped.")
+                    self.presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Continue".uppercased())
                         .font(.headline)
