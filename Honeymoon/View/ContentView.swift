@@ -13,17 +13,44 @@ struct ContentView: View {
     @State var showGuide: Bool = false
     @State var showInfo: Bool = false
     
+    //MARK: - Card Views
+    
+    var cardViews: [CardView] = {
+        var views = [CardView]()
+        for index in 0..<2 {
+            views.append(CardView(honeymoon: honeymoonData[index]))
+        }
+        return views
+    }()
+    
+    //MARK: - Top Card
+    private func isTopCard(cardView: CardView) -> Bool {
+        guard let index = cardViews.firstIndex(where: { $0.id == cardView.id}) else {
+            return false
+        }
+        return index == 0
+    }
+    
     var body: some View {
         VStack {
+            //MARK: - Header
+            
             HeaderView(showGuideView: $showGuide, showInfoVIew: $showInfo)
             
             Spacer()
             
-            CardView(honeymoon: honeymoonData[2])
-            // Fixme: Add padding to the cards later on.
-                .padding()
+            //MARK: -  Cards
+            ZStack {
+                ForEach(cardViews) { cardView in
+                    cardView
+                        .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
+                }
+            }
+            .padding(.horizontal)
             
             Spacer()
+            
+            //MARK: - Footer
             
             FooterView(showBookingAlert: $showAlert)
         }
